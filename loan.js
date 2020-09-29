@@ -11,7 +11,8 @@ var $ = function (id)
    floatMonthlyPayment = parseFloat($("monthly_payment").value);
    intLoanTerm = parseInt ($("loan_length").value);
    floatTotalCost = parseFloat (floatMonthlyPayment * intLoanTerm);
-   $("total_cost").value = floatTotalCost;
+   $("total_cost").value = floatTotalCost.toFixed(2);
+   
  }
  
  window.onload = function () 
