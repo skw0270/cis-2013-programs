@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Geometry Calculator</title>
+<script type="text/javascript" src="geometry.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="geometry.jpg" alt="Geometry" width="1600" height="1600">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 style="font-family: cursive; color: white" class="w3-xxlarge">Geometry Calculator</h1>
+    <p style="font-family: cursive; color: white">Enter the values requested below and click the calculation button you prefer.</p>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px; background: #b9cafa; border-radius: 50px; font-family: cursive">
+
+  <!-- Circle Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1 style="font-family: cursive">CIRCLE</h1><br>
+      <p><input style="border-radius:20px; background:#7697f5; color:#0042ff" class="w3-input w3-padding-16" type="text" placeholder="Circle Radius" id="radius"></p>
+      <p><button style="border-radius:9px" class="w3-button w3-light-grey w3-section" id="calc_circle_area">AREA</button></p>
+      <p><button style="border-radius:9px" class="w3-button w3-light-grey w3-section" id="calc_circle_circum">CIRCUMFERENCE</button></p>
+  </div>
+  
+  <hr>
+  
+  <!-- Rectangle Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1 style="font-family: cursive">RECTANGLE</h1><br>
+      <p><input style="border-radius:20px; background:#7697f5; color:#0042ff" class="w3-input w3-padding-16" type="text" placeholder="Rectangle Width" id="rect_width"></p>
+      <p><input style="border-radius:20px; background:#7697f5; color:#0042ff" class="w3-input w3-padding-16" type="text" placeholder="Rectangle Height" id="rect_height"></p>
+      <p><button style="border-radius:9px" class="w3-button w3-light-grey w3-section" type="submit" id="calc_rect_area">AREA</button></p>
+      <p><button style="border-radius:9px" class="w3-button w3-light-grey w3-section" type="submit" id="calc_rect_perim">PERIMETER</button></p>
+  </div>
+
+  <hr>
+
+  <!-- Triangle Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1 style="font-family: cursive">TRIANGLE</h1><br>
+      <p><input style="border-radius:20px; background:#7697f5; color:#0042ff; background:#7697f5; color:#0042ff; background:#7697f5; color:#0042ff" class="w3-input w3-padding-16" type="text" placeholder="Triangle Side 1" id="tri_side1"></p>
+      <p><input style="border-radius:20px; background:#7697f5; color:#0042ff; background:#7697f5; color:#0042ff" class="w3-input w3-padding-16" type="text" placeholder="Triangle Side 2" id="tri_side2"></p>
+      <p><input style="border-radius:20px; background:#7697f5; color:#0042ff" class="w3-input w3-padding-16" type="text" placeholder="Triangle Side 3" id="tri_side3"></p>
+      <p><button style="border-radius:9px" class="w3-button w3-light-grey w3-section" type="submit" id="calc_tri_area">AREA</button></p>
+      <p><button style="border-radius:9px" class="w3-button w3-light-grey w3-section" type="submit" id="calc_tri_perim">PERIMETER</button></p>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer & Do it button-->
+<footer class="w3-center w3-light-grey w3-padding-32">
+ <h2 style="font-family: cursive">Calculate It All!!!</h2>
+ <p><button style="font-family: cursive; border-color:lightgreen; background:blue; color: white; border-radius:9px" type="submit"id="calc_all"><i>DO IT!!!</i></button></p>
+</footer>
+
+</body>
+</html>
